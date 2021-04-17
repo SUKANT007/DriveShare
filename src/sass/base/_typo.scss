@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.no-wrap{white-space: nowrap;}
+
+.b{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 1.4;
+	color: $color-black;
+	box-sizing: border-box;
+
+	&--white-light{color: $color-white-light !important;}
+
+	&--2{ font-size: 1.8rem;}
+
+	&--3{ font-size: 1.4rem; }
+
+	&--4{ font-size: 1rem; }
+
+	&--5{ font-weight: 400; font-size:1.8rem }
+
+	&--white{ color: $color-white; }
+}
+
+.c{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 200;
+	font-size: 1.8em;
+	line-height: 1;
+	color: $color-black;
+	box-sizing: border-box;
+	font-style: italic;
+
+	&--2{ font-size: 1.6rem;}
+
+	&--3{ font-size: 1.2rem; }
+
+	&--white{ color: $color-white; }
+}
+
+.h{
+	color: $color-black;
+	font-family: 'Poppins', sans-serif;
+	cursor: default;
+	transition: all 0.2s ease-in-out;
+
+	&--white{color: $color-white !important;}
+
+	&--head {font-size: 4rem; font-weight: 500;}
+
+	&--shead {font-size: 3.5rem; font-weight: 400;}
+
+	&--1{ font-size: 3rem; font-weight: 500; text-decoration: underline 0.24rem $color-primary; text-underline-offset: 0.6rem; }
+
+	&--2{ font-size: 2.4rem; font-weight: 400; }
+
+	&--3{ font-size: 2.2rem; font-weight: 300; }
+
+	&--4{ font-size: 2rem; font-weight: 300; }
+
+	&--disabled {
+		opacity: 50%;
+		text-decoration: none !important;
+	}
+}
+
+.d{
+	color: $color-black;
+	font-family: 'Poppins', sans-serif;
+	cursor: default;
+
+	&--1{ font-size: 5rem; font-weight: 300; text-transform: uppercase; }
+	&--2{ font-size: 3rem; font-weight: 400;}
+}
+
+.a{
+	color: $color-black;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+
+	&--1{ font-size: 1.8rem; }
+
+	&--2{ font-size: 1.6rem; }
+
+	&--danger{ color: $color-red }
+
+	&--success{ color: $color-green }
+
+	&--warning{ color: $color-yellow }
+	
+	&--info{ color: $color-blue }
+
+	&--big{
+		font-weight: 400 !important;
+		font-size: 2.4rem !important;
+	}
+}
+
+.text{
+	&--error{color: $color-red !important}
+}

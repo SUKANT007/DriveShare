@@ -1,0 +1,44 @@
+.snackbar {
+	padding: 0.4rem 1.6rem;
+	padding-left: 0.4rem;
+	border-radius:0.75rem;
+	position: absolute;
+	bottom: 4rem;
+	left: 50%;
+	border: 0.25rem solid $color-blue;
+	background: $color-white,rgba($color-blue,0.2);
+	box-shadow: 0 1rem 2rem rgba($color-black,0.16);
+	display: flex;
+	align-items: center;
+	z-index: 120;
+	transform:translatex(-50%);
+	transition: all 0.4s ease-in-out;
+
+	&--inf{
+		border: 0.25rem solid $color-blue;
+		background-color: rgba($color-blue,0.2);
+		box-shadow: 0 1rem 2rem rgba($color-black,0.16);
+	}
+
+	&--suc{
+		border: 0.25rem solid $color-green;
+		background-color: rgba($color-green,0.2);
+		box-shadow: 0 1rem 2rem rgba($color-black,0.16);
+	}
+
+	&--err{
+		border: 0.25rem solid $color-red;
+		background-color: rgba($color-red,0.2);
+		box-shadow: 0 1rem 2rem rgba($color-black,0.16);
+	}
+
+	&__icon {
+		height: 4rem;
+		width: 4rem;
+		object-fit: cover;
+	}
+
+	&__text {
+		color: $color-black;
+	}
+}

@@ -1,0 +1,15 @@
+.card {
+	border-radius: 0.8rem;
+	background-color: $color-white;
+	box-shadow: 0 0.3rem 0.6rem rgba($color-black, 0.16);
+	padding: 2rem 2.4rem;
+
+	&__border {
+		border: 0.4rem solid;
+
+		&--red{border-color: $color-red;}
+		&--yellow{border-color: $color-yellow;}
+		&--blue{border-color: $color-blue;}
+		&--green{border-color: $color-green;}
+	}
+}

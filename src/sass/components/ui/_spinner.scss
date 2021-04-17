@@ -1,0 +1,45 @@
+.backdrop{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0, 0.5);
+	z-index: 100;
+}
+
+.spinner__container{
+	border-radius: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// background-color: $color-white;
+	// box-shadow: 0 0.4rem 1.2rem rgba($color-black, 0.16);
+	padding: 4rem;
+}
+
+.leave-modal{
+	&__container{
+		border-radius: 0.8rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: $color-white;
+		box-shadow: 0 0.4rem 1.2rem rgba($color-black, 0.16);
+		padding: 2rem 4rem;
+	}
+
+	&__actions{
+		display: flex;
+		flex-direction: row-reverse;
+		width: 100%;
+		margin-top: 4rem;
+
+		& div{
+		&:not(:last-child){margin-left:1.2rem;}}
+	}
+}

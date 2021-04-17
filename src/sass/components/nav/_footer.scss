@@ -1,0 +1,29 @@
+.footer{
+	height: 7vh;
+	width: 100%;
+	background-color: $color-white;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.8rem 4rem;
+	box-shadow: 0 -0.4rem 0.8rem rgba($color-black, 0.16);
+
+	&__container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: 30%;
+
+		& > div {
+			&:not(:last-child){
+				margin-right: 2rem;
+			}
+		}
+
+		&:nth-child(1){ justify-content: flex-start; }
+		&:nth-child(2){ justify-content: center; }
+		&:nth-child(3){ justify-content: flex-end; }
+	}
+
+}

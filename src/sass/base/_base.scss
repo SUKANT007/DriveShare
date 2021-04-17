@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before{
+	margin:0;
+	padding:0;
+	box-sizing: inherit;
+}
+
+html{ 
+	font-size: 62.5%;
+	background-color: $color-white;
+	scroll-behavior: smooth;
+	color: $color-black;
+	font-family: 'Poppins', sans-serif;
+	
+	@include respond(desBig){ font-size: 62.5% ; }
+	@include respond(desk){ font-size: 50% ; }
+	@include respond(tabLand){ font-size: 56.25% ; }
+	@include respond(tabPort){ font-size: 50% ; }
+	@include respond(phone){ font-size: 60% ; }
+}
+
+body{ box-sizing: border-box; }
+
+main{ min-height: 100vh; background: url("../../assets/images/background.png"); background-size: cover;}
+
+section {
+    padding: 2rem 20rem;
+	min-height: 87vh;
+	z-index: 1;
+	position: relative;
+
+	@include respond(desk){padding:2rem 10rem;}
+	@include respond(phone){padding:0 2rem;}
+}

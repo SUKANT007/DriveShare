@@ -1,0 +1,54 @@
+.grid{
+	width: 100%;
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-row-gap: 6rem;
+	grid-column-gap: 10rem;
+}
+
+// .grid{
+// 	width: 100%;
+// 	margin: 0 auto;
+
+// 	@include respond(phone){
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+
+// 	&:not(:last-child){margin-bottom: $gutter-ver-med;}
+
+// 	@include clearfix;
+
+// 	[class ^= "col-"]{
+// 		float: left;
+// 		border-radius: 3rem;
+// 		margin-bottom: 4rem;
+
+// 		@include respond(phone){ width: 100% !important; }
+
+// 		&:not(:last-child){
+// 			margin-right: $gutter-hor-med;
+			
+// 			@include respond(phone){ margin-bottom: 2.8rem; margin-right: 0; }
+// 		}
+// 	}
+
+// 	.col-1-of-1{ width: 100%; }
+
+// 	.col-1-of-2{ width: calc((100% - #{$gutter-hor}) / 2); }
+
+// 	.col-1-of-3{ width: calc((100% - (#{$gutter-hor}*2)) / 3); }
+
+// 	.col-2-of-3{ width: calc(((100% - (#{$gutter-hor}*2)) / 3)*2 + #{$gutter-hor}); }
+
+// 	.col-1-of-4{ width: calc((100% - (#{$gutter-hor}*3)) / 4); }
+
+// 	.col-2-of-4{ width: calc(((100% - (#{$gutter-hor}*3)) / 4)*2 + #{$gutter-hor}); }
+
+// 	.col-3-of-4{ width: calc(((100% - (#{$gutter-hor}*3)) / 4)*3 + 2*(#{$gutter-hor})); }
+
+// 	.col-1-of-5{ width: calc((100% - (#{$gutter-hor}*4)) / 5); }
+
+// 	&__question-status{float:left; margin-bottom: 1rem; &:not(:last-child){margin-right: 1.6rem;} }
+// }

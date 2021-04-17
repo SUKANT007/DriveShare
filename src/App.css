@@ -18,8 +18,28 @@ code {
 
 .container {
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 45px 20px;
+  padding: 4.5rem 2rem;
+  background: url('./assets/bgs/drive.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+.card {
+	background: white;
+	box-shadow: 0 0.3rem 0.9rem rgba(0,0,0, 0.4);
+	border-radius:0.5rem;
+}
+
+.textHead {
+	font-size: 5rem;
+}
+
+.textSubHead {
+	font-size: 2rem;
 }
 
 .pure-button-primary {

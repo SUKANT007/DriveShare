@@ -1,0 +1,32 @@
+.pill{
+	padding: 0.4rem 1.5rem;
+	display: flex;
+	font-size: 1.3rem;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100rem;
+	width: max-content;
+	border-radius: 6rem;
+	height: max-content;
+
+	&--fill{
+		border: 0;
+
+		&--primary{ background-color: $color-primary; }
+		&--error{ background-color: $color-red; color: $color-white !important; }
+		&--warning{ background-color: $color-yellow; }
+		&--info{ background-color: $color-blue; }
+		&--success{ background-color: $color-green; }
+	}
+
+	&--no-fill{
+		background-color: $color-white;
+
+		&--primary{ border: 0.2rem $color-primary solid; color: $color-primary !important;}
+		&--error{ border: 0.2rem $color-red solid; color: $color-red !important;}
+		&--warning{ border: 0.2rem $color-yellow solid; color: $color-yellow !important;}
+		&--info{ border: 0.2rem $color-blue solid; color: $color-blue !important;}
+		&--success{ border: 0.2rem $color-green solid; color: $color-green !important;}
+	}
+}
