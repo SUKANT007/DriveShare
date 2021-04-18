@@ -39,15 +39,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ramji/DriveShare/contracts/zeppelin/lifecycle/Killable.sol\":\"Killable\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ramji/DriveShare/contracts/zeppelin/lifecycle/Killable.sol\":{\"keccak256\":\"0x0985e6eb020dae24817163ea94a8fa223db52c91a66e3f716a0d3b7221e26e55\",\"urls\":[\"bzzr://e18f52731cdb8f95cf207bf45113cac7ca7d5c99f7e441af898b2244a96a9a8e\"]},\"/home/ramji/DriveShare/contracts/zeppelin/ownership/Ownable.sol\":{\"keccak256\":\"0x8ee090881ca05760f9e23337d61278a50fb94208c8fa5dcc569b89df341c0b2c\",\"urls\":[\"bzzr://78b0e634d572fd3660daccb8153befa9c982f36515b2709abef600768c24c289\"]}},\"version\":1}",
-  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506102bf806100536000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b51461005c5780638da5cb5b14610073578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b005b34801561007f57600080fd5b5061008861019e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c3565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561019c576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561029057600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151561028f57806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5b505600a165627a7a7230582061d45334ea87a1d1ad1e4b4718392b6f43a08383707f95c6bbced1b045ba62950029",
-  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b51461005c5780638da5cb5b14610073578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b005b34801561007f57600080fd5b5061008861019e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c3565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561019c576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561029057600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151561028f57806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5b505600a165627a7a7230582061d45334ea87a1d1ad1e4b4718392b6f43a08383707f95c6bbced1b045ba62950029",
-  "sourceMap": "179:91:3:-;;;275:10:4;267:5;;:18;;;;;;;;;;;;;;;;;;179:91:3;;;;;;",
-  "deployedSourceMap": "179:91:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;212:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;212:56:3;;;;;;217:20:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;217:20:4;;;;;;;;;;;;;;;;;;;;;;;;;;;362:110;;8:9:-1;5:2;;;30:1;27;20:12;5:2;362:110:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;212:56:3;339:5:4;;;;;;;;;;;325:19;;:10;:19;;;321:32;;;257:5:3;;;;;;;;;;;244:19;;;321:32:4;212:56:3:o;217:20:4:-;;;;;;;;;;;;;:::o;362:110::-;339:5;;;;;;;;;;;325:19;;:10;:19;;;321:32;;;447:1;427:22;;:8;:22;;;;423:44;;;459:8;451:5;;:16;;;;;;;;;;;;;;;;;;423:44;321:32;362:110;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.4.26+commit.4563c3fc\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"kill\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/ramji/CryptoPool/contracts/zeppelin/lifecycle/Killable.sol\":\"Killable\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/ramji/CryptoPool/contracts/zeppelin/lifecycle/Killable.sol\":{\"keccak256\":\"0x0985e6eb020dae24817163ea94a8fa223db52c91a66e3f716a0d3b7221e26e55\",\"urls\":[\"bzzr://e18f52731cdb8f95cf207bf45113cac7ca7d5c99f7e441af898b2244a96a9a8e\"]},\"/home/ramji/CryptoPool/contracts/zeppelin/ownership/Ownable.sol\":{\"keccak256\":\"0xee25e68b0d12da4891081d2831854dbdbcc4c981ea41c6c232883c52d2638d41\",\"urls\":[\"bzzr://492f4e88d303a58b789dd92702e47c5f961efc769aec4603958c08ed9710974c\"]}},\"version\":1}",
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506102bf806100536000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b51461005c5780638da5cb5b14610073578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b005b34801561007f57600080fd5b5061008861019e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c3565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561019c576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561029057600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151561028f57806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5b505600a165627a7a72305820e700528d59a1ad2d961483bc981a99296ba8954a495147e69c2d6c5046379fc50029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806341c0e1b51461005c5780638da5cb5b14610073578063f2fde38b146100ca575b600080fd5b34801561006857600080fd5b5061007161010d565b005b34801561007f57600080fd5b5061008861019e565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b3480156100d657600080fd5b5061010b600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101c3565b005b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561019c576000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16ff5b565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16141561029057600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614151561028f57806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505b5b505600a165627a7a72305820e700528d59a1ad2d961483bc981a99296ba8954a495147e69c2d6c5046379fc50029",
+  "sourceMap": "179:91:3:-;;;282:10:4;274:5;;:18;;;;;;;;;;;;;;;;;;179:91:3;;;;;;",
+  "deployedSourceMap": "179:91:3:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;212:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;212:56:3;;;;;;218:20:4;;8:9:-1;5:2;;;30:1;27;20:12;5:2;218:20:4;;;;;;;;;;;;;;;;;;;;;;;;;;;375:116;;8:9:-1;5:2;;;30:1;27;20:12;5:2;375:116:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;212:56:3;354:5:4;;;;;;;;;;;340:19;;:10;:19;;;336:26;;;257:5:3;;;;;;;;;;;244:19;;;336:26:4;212:56:3:o;218:20:4:-;;;;;;;;;;;;;:::o;375:116::-;354:5;;;;;;;;;;;340:19;;:10;:19;;;336:26;;;464:1;444:22;;:8;:22;;;;440:44;;;476:8;468:5;;:16;;;;;;;;;;;;;;;;;;440:44;336:26;375:116;:::o",
   "source": "pragma solidity ^0.4.4;\n\n\nimport \"./../ownership/Ownable.sol\";\n\n\n/*\n * Killable\n * Base contract that can be killed by owner. All funds in contract will be sent to the owner.\n */\ncontract Killable is Ownable {\n  function kill() onlyOwner {\n    selfdestruct(owner);\n  }\n}\n",
-  "sourcePath": "/home/ramji/DriveShare/contracts/zeppelin/lifecycle/Killable.sol",
+  "sourcePath": "/home/ramji/CryptoPool/contracts/zeppelin/lifecycle/Killable.sol",
   "ast": {
-    "absolutePath": "/home/ramji/DriveShare/contracts/zeppelin/lifecycle/Killable.sol",
+    "absolutePath": "/home/ramji/CryptoPool/contracts/zeppelin/lifecycle/Killable.sol",
     "exportedSymbols": {
       "Killable": [
         792
@@ -68,7 +68,7 @@
         "src": "0:23:3"
       },
       {
-        "absolutePath": "/home/ramji/DriveShare/contracts/zeppelin/ownership/Ownable.sol",
+        "absolutePath": "/home/ramji/CryptoPool/contracts/zeppelin/ownership/Ownable.sol",
         "file": "./../ownership/Ownable.sol",
         "id": 779,
         "nodeType": "ImportDirective",
@@ -231,7 +231,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/ramji/DriveShare/contracts/zeppelin/lifecycle/Killable.sol",
+      "absolutePath": "/home/ramji/CryptoPool/contracts/zeppelin/lifecycle/Killable.sol",
       "exportedSymbols": {
         "Killable": [
           792
@@ -255,7 +255,7 @@
       {
         "attributes": {
           "SourceUnit": 834,
-          "absolutePath": "/home/ramji/DriveShare/contracts/zeppelin/ownership/Ownable.sol",
+          "absolutePath": "/home/ramji/CryptoPool/contracts/zeppelin/ownership/Ownable.sol",
           "file": "./../ownership/Ownable.sol",
           "scope": 793,
           "symbolAliases": [
@@ -454,12 +454,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xFdD7d517363a980866ea6f936C0FCA9c4026b9ad",
-      "transactionHash": "0x172b3dcb1553feda9118426ab0378fa62468826bbc5258496d05de5135793b9a"
+      "address": "0xd3682E4c5e1E1fDcf391BfEca6c3AfFd84524830",
+      "transactionHash": "0xb6bbf92cb510be65d846ceb9b786b71573e6c09477942705538e969841590a7c"
     }
   },
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-18T09:42:16.236Z",
+  "updatedAt": "2021-04-18T17:08:58.080Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

@@ -131,7 +131,7 @@ class RideDetails extends Component {
 
 								{ passengerStates.length == 0 ? '' : passengerStates.map((passengerState, i) => {
 									return (
-										<p>{ passenger[i] } {passengerState }</p>
+										<p>{ passenger[i] } <strong>{ passengerState }</strong></p>
 									);
 								}) }
 
