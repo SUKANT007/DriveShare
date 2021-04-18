@@ -60,6 +60,20 @@ code {
 	max-height: 100%;
 }
 
+.ride__entry{
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5rem 0;
+	border-radius: 0.5rem;
+	border: 0.05rem solid #666666;
+	margin-bottom: 1rem;
+}
+.ride__entry > div {
+	padding: 0 1rem;
+	border-right: 0.1rem solid #cecece;
+	min-width: 5rem;
+}
+
 .card {
 	background: white;
 	box-shadow: 0 0.3rem 0.9rem rgba(0,0,0, 0.4);

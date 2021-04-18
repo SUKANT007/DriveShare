@@ -111,18 +111,32 @@ class RideList extends Component {
 							console.log(ride);
 							return (
 								<div className='card' style={ { marginBottom: '1rem' } }>
-									<div>
-										{ ride[0] }, { web3.fromWei(ride[1], "ether").toNumber() }, { ride[2]["c"][0] }, <b>{ ride[3] } --> { ride[4] }</b>,
-									<span style={ { margin: '0 1rem' } }>
+									<div className='ride__entry'>
+										<div>
+											<div style={ { display: 'flex', justifyContent: 'space-between', alignItems: 'center' } }>
+
+												<h2 style={ { marginTop: 0 } }>	{ ride[3] } > { ride[4] }</h2>
+												{/* <h3 style={ { marginTop: 0 } }>{ ride[1].e }</h3> */ }
+											</div>
+											<div><b>Driver's Address: </b>{ ride[0] }</div>
+										</div>
+										<div>
+											<h3 style={ { marginTop: 0, padding: '0 1rem ' } }>{ web3.fromWei(ride[1], "ether").toNumber() } ETH</h3>
+										</div>
+										{/* <div><b>Seats Available: </b>{ ride[2]["c"][0] }</div> */ }
+										<div>
 											{ this.rideshareButton(this.state.passengers[i].indexOf(web3.eth.accounts[0]) > -1, ride[1], i) }
+										</div>
+										<span style={ { margin: '0 1rem' } }>
+
+											<Link to={ `/details/${i}` }>Details</Link>
 										</span>
-										<Link to={ `/details/${i}` }>Details</Link>
 									</div>
 								</div>
 							);
 						}) }
 					</div>
-				</div>
+				</div >
 			);
 		}
 	}
