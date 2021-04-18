@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { HiddenOnlyAuth, VisibleOnlyAuth } from './util/wrappers.js';
 
@@ -8,7 +7,6 @@ import LoginButtonContainer from './user/ui/loginbutton/LoginButtonContainer';
 import LogoutButtonContainer from './user/ui/logoutbutton/LogoutButtonContainer';
 
 // Styles
-import './main.scss';
 import './css/oswald.css';
 import './css/open-sans.css';
 import './css/pure-min.css';
