@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router';
 import { HiddenOnlyAuth, VisibleOnlyAuth } from './util/wrappers.js';
 
@@ -46,13 +47,14 @@ class App extends Component {
 						<OnlyGuestLinks />
 						<OnlyAuthLinks />
 					</ul>
-					<Link to="/" className="pure-menu-heading pure-menu-link">Truffle Box</Link>
+					<Link to="/" className="pure-menu-heading pure-menu-link">CryptoPool</Link>
 				</nav>
 
+				{/* { this.props.name ? <h1>Hello { this.props.name }</h1> : null } */ }
 				{this.props.children }
 			</div>
 		);
 	}
 }
 
-export default App;
+export default (App);

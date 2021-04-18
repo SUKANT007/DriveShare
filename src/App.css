@@ -22,16 +22,53 @@ code {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 4.5rem 2rem;
-  background: url('./assets/bgs/drive.jpg');
+  /* padding: 4.5rem 2rem; */
   height: 100vh;
-  background-size: cover;
+}
+
+
+.bg1 {
+	background: url('./assets/bgs/drive.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+
+.bg2 {
+	background: url('./assets/bgs/interior.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.bg3 {
+	background: url('./assets/bgs/car.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.dashboard {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+}
+
+.dashboard__content {
+	margin-top: 4rem;
+	max-height: 100%;
 }
 
 .card {
 	background: white;
 	box-shadow: 0 0.3rem 0.9rem rgba(0,0,0, 0.4);
 	border-radius:0.5rem;
+	z-index: 10;
+}
+
+.card > * {
+	padding: 1rem 2rem;
 }
 
 .textHead {

@@ -4,7 +4,7 @@ import SignUpFormContainer from '../../ui/signupform/SignUpFormContainer';
 class SignUp extends Component {
 	render() {
 		return (
-			<main className="container">
+			<main className="container bg1">
 				<div className="pure-g card">
 					<div className="pure-u-1-1" style={ { padding: '2rem' } }>
 						<h1>Sign Up</h1>

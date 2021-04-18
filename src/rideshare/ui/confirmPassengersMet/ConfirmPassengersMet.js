@@ -1,46 +1,46 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class ConfirmPassengersMet extends Component {
-  constructor(props) {
-    super(props)
+	constructor(props) {
+		super(props);
 
-    this.state = {
-      gps_location: '',
-      passengers: ''
-    }
-  }
+		this.state = {
+			gps_location: '',
+			passengers: ''
+		};
+	}
 
-  onGpsLocationChange(event) {
-    this.setState({ gps_location: event.target.value })
-  }
+	onGpsLocationChange(event) {
+		this.setState({ gps_location: event.target.value });
+	}
 
-  onPassengersChange(event) {
-    this.setState({ passengers: event.target.value })
-  }
+	onPassengersChange(event) {
+		this.setState({ passengers: event.target.value });
+	}
 
-  handleSubmit(event) {
-    event.preventDefault()
+	handleSubmit(event) {
+		event.preventDefault();
 
-    this.props.onConfirmPassengersMetFormSubmit(this.props.ride_number, this.state.passengers, this.state.gps_location)
-  }
+		this.props.onConfirmPassengersMetFormSubmit(this.props.ride_number, this.state.passengers, this.state.gps_location);
+	}
 
-  render() {
-    return(
-      <form className="pure-form pure-form-stacked" onSubmit={this.handleSubmit.bind(this)}>
-        <fieldset>
-          <label htmlFor="name">GPS Location</label>
-          <input id="gps_location" type="text" value={this.state.gps_location} onChange={this.onGpsLocationChange.bind(this)} placeholder="GPS Location" />
+	render() {
+		return (
+			<form className="pure-form pure-form-stacked" onSubmit={ this.handleSubmit.bind(this) }>
+				<fieldset>
+					<label htmlFor="name">Starting Location</label>
+					<input id="gps_location" type="text" value={ this.state.gps_location } onChange={ this.onGpsLocationChange.bind(this) } placeholder="Your Starting Location" />
 
-          <label htmlFor="name">Passengers</label>
-          <textarea id="passengers" type="text" value={this.state.passengers} onChange={this.onPassengersChange.bind(this)} placeholder="Passengers" />
+					<label htmlFor="name">Passengers</label>
+					<textarea id="passengers" type="text" value={ this.state.passengers } onChange={ this.onPassengersChange.bind(this) } placeholder="Passengers" />
 
-          <br />
+					<br />
 
-          <button type="submit" className="pure-button pure-button-primary">Confirm Passengers Met</button>
-        </fieldset>
-      </form>
-    )
-  }
+					<button type="submit" className="pure-button pure-button-primary">Confirm Passengers Met</button>
+				</fieldset>
+			</form>
+		);
+	}
 }
 
-export default ConfirmPassengersMet
+export default ConfirmPassengersMet;

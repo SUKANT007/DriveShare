@@ -1,24 +1,22 @@
-import React, { Component } from 'react'
-import RideList from './RideList'
+import React, { Component } from 'react';
+import RideList from './RideList';
 
 class Dashboard extends Component {
-  constructor(props, { authData }) {
-    super(props)
-    authData = this.props
-  }
+	constructor(props, { authData }) {
+		super(props);
+		authData = this.props;
+	}
 
-  render() {
-    return(
-      <main className="container">
-        <div className="pure-g">
-          <div className="pure-u-1-1">
-            <h1>Dashboard</h1>
-            <RideList/>
-          </div>
-        </div>
-      </main>
-    )
-  }
+	render() {
+		return (
+			<main className="dashboard bg3">
+				<div className='dashboard__content'>
+					<h1>Dashboard</h1>
+					<RideList />
+				</div>
+			</main>
+		);
+	}
 }
 
-export default Dashboard
+export default Dashboard;
