@@ -3,6 +3,8 @@ import RideshareContract from '../../../build/contracts/Rideshare.json';
 import store from '../../store';
 import JoinRideContainer from '../../rideshare/ui/joinride/JoinRideContainer';
 import { Link } from 'react-router';
+import { connect } from 'react-redux';
+
 
 const contract = require('truffle-contract');
 
@@ -12,6 +14,7 @@ class RideList extends Component {
 		this.state = {
 			rideshares: [],
 			passengers: [],
+			driver: '',
 			rideshareLoading: true
 		};
 		this.getRides = this.getRides.bind(this);
@@ -20,6 +23,8 @@ class RideList extends Component {
 
 	componentDidMount() {
 		this.getRides();
+		console.log(this.props.user);
+		console.log(this.state.rideshares);
 	}
 
 	getRides() {
@@ -84,7 +89,16 @@ class RideList extends Component {
 	rideshareButton(condition, bigNum, i) {
 		let web3 = store.getState().web3.web3Instance;
 		console.log('passengers');
-		console.log(this.state.passengers);
+		// console.log(this.state.passengers);
+		// console.log(this.state.rideshares);
+		const driver = this.state.rideshares[0][0];
+
+		if (web3.eth.accounts[0] == driver) {
+			return (
+				<b>You are a driver</b>
+			);
+		}
+
 		if (condition) {
 			return (
 				<span>Leave</span>
@@ -142,4 +156,9 @@ class RideList extends Component {
 	}
 }
 
-export default RideList;
+const mapStateToProps = (state) => ({
+	user: state.user.data
+});
+
+
+export default connect(mapStateToProps)(RideList);
